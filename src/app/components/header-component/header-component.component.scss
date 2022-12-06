@@ -1,0 +1,25 @@
+.ctn-header{
+    width: 100%;
+    padding: 1%;
+    position: fixed;
+    z-index: 1;
+    background-color: #3FB46F;
+    height: 25px;
+    .ctn-options{
+        display: flex;
+        height: 20px;
+        .title{
+            margin: auto;           
+            font-size: 20px;
+            font-family: cursive;  
+            font-weight: 600; 
+            color: #ffff;  
+        }
+        .image{  
+            margin: 0 50px;
+            >img{
+                height: 75px;
+            }
+        }
+    }  
+}

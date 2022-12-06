@@ -1,0 +1,33 @@
+<div class="ctn-body">
+    <mat-card>
+        <mat-card-content>
+            <form [formGroup]="form" (ngSubmit)="submit()">
+                <div class="ctn-title">Formulario de Contacto</div>
+                <div class="ctn-data">
+                    <label>Nombre</label>
+                    <mat-form-field><input matInput formControlName="name" placeholder="Escribe tu nombre"></mat-form-field>
+                    <label>Apellido</label>
+                    <mat-form-field><input matInput formControlName="lastName" placeholder="Escribe tu apellido"></mat-form-field>                  
+                    <label>Documento</label>
+                    <mat-form-field><input matInput formControlName="id" placeholder="Escribe tu documento"></mat-form-field>
+                    <label>Correo</label>
+                    <mat-form-field><input matInput formControlName="email" placeholder="Escribe tu correo"></mat-form-field>
+                    <label>Género</label>
+                    <mat-form-field>
+                        <mat-label>Selecciona tu genero</mat-label>
+                        <mat-select formControlName="gender">
+                            <mat-option *ngFor="let gender of genders" [value]="gender.value">{{gender.viewValue}}</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <label>Edad</label>
+                        <mat-form-field><input formControlName="age" matInput placeholder="Escribe tu Edad"></mat-form-field>    
+                    <label>Pasatiempo</label>
+                    <mat-radio-group formControlName="hobbie">
+                        <mat-radio-button *ngFor="let hobbie of hobbies" [value]="hobbie.value">{{hobbie.viewValue}}</mat-radio-button>
+                    </mat-radio-group>
+                    <button mat-raised-button color="primary" type="submit">ENVIAR</button>
+                </div>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>

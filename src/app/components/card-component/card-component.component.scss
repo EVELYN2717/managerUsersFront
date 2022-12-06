@@ -1,0 +1,41 @@
+.ctn-body{
+    .mat-card{
+        background-color: #fff;
+        border-radius: 10px;
+        border: solid #3FB46F;
+        .mat-card-content{
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            border: solid hsl(225deg, 87%, 54%);
+            .ctn-title{
+                color: #3FB46F;
+                font-family: cursive;
+                font-size: 20px;
+                font-weight: 600;
+                margin: 30px auto;
+            }
+            .ctn-data{
+                display: flex;
+                flex-direction: column;
+                margin: 10px;
+                color: #000;
+                font-size: 15px;
+                font-weight: 600;
+                .mat-form-field{
+                    margin: 10px;
+                    border-radius: 5px;
+                    border: solid 1px #c2185b;
+                }
+                .mat-radio-group{
+                    display: flex;
+                    justify-content: space-around;
+                    margin: 10px;
+                }
+                .mat-raised-button{
+                    margin: 10px;
+                }
+            }
+        }
+    }
+}
